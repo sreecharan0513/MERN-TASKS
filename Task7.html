@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS_task2.css" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #z a {
+            display: block;
+            width: 170px;
+            background-color: rgb(162, 249, 255);
+            padding: 10px;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        #g {
+            color: white;
+            background-color: orange !important;
+        }
+
+        #h {
+            display: inline;
+            float: left;
+            padding: 10px;
+            background-color: rgb(205, 205, 205);
+            border-right: 1px solid blue;
+            border-left: 1px solid blue;
+            border-collapse: collapse;
+        }
+
+        #b {
+            display: inline;
+            float: left;
+            padding: 10px;
+            background-color: grey;
+            border-right: 0.2px solid rgb(205, 205, 205);
+
+        }
+
+        #s {
+            color: white;
+        }
+
+        #a a {
+            text-decoration: none;
+        }
+
+        #a li {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #q {
+            /* width: 50%; */
+            float: left;
+        }
+
+        #w {
+            margin-top: 60px;
+            margin-left: 80px;
+            /* width: 50%; */
+            float: left;
+        }
+
+        #c {
+            border: 1px solid black;
+            padding: 10px 7px 1px 5px;
+        }
+
+        #d {
+            border: 1px solid black;
+            padding: 10px 0px 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div>
+        <div id="q">
+            <h4 style="white-space: pre"> Vertical Navigation Bar</h4>
+            <nav id="c">
+                <ul id="z">
+                    <li><a id="g" href="default.asp">Home</a></li>
+                    <li><a href="news.asp">Java</a></li>
+                    <li><a href="contact.asp">CSS</a></li>
+                    <li><a href="about.asp">HTML</a></li>
+                    <li><a href="about.asp">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="w">
+            <h4 style="white-space: pre"> Horizontal Navigation Bar</h4>
+            <br>
+            <table>
+                <tr>
+                    <td id="d">
+                        <ul id="a">
+                            <li id="b"><a id="s" href="default.asp">Home</a></li>
+                            <li id="h"><a href="news.asp">Java</a></li>
+                            <li id="h"><a href="contact.asp">HTML</a></li>
+                            <li id="h"><a href="about.asp">CSS</a></li>
+                            <li id="h" style="border-right: rgb(205, 205, 205)"><span
+                                    style="color: rgb(205, 205, 205)">helloooo</span></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

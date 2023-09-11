@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS_task7.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #f {
+            width: 1000px;
+            height: 580px;
+            border: 1px solid rgba(165, 10, 77, 0.977);
+            background-color: rgba(165, 10, 77, 0.977);
+            margin: 0 auto;
+        }
+
+        #g {
+            border: 1px solid rgb(116, 5, 49);
+            width: 700px;
+            height: 520px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(116, 5, 49);
+            color: white;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-top: 15px;
+            width: 180px;
+            margin-left: 0px;
+            padding: 5px;
+        }
+
+        input[type="radio"] {
+            width: 10px;
+            height: 10px;
+
+        }
+
+        select {
+            width: 135px;
+            margin-left: 0px;
+            margin-left: 38px;
+            /* font-weight: bold; */
+        }
+
+        input[type="submit"] {
+            width: 320px;
+            border-radius: 5px;
+            font-size: large;
+            border-color: white;
+            /* font-weight: bold; */
+            /* margin-left: 50px; */
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            margin-left: 63px;
+        }
+
+        input[type="password"] {
+            margin-left: 36px;
+        }
+
+        textarea {
+            margin-left: 58px;
+            margin-top: 0px;
+        }
+
+        #zip {
+            margin-left: 41px;
+            margin-bottom: 0px;
+        }
+
+        #x {
+            /* box-sizing: content-box; */
+            margin-top: 40px;
+            margin-bottom: 30px;
+            margin-left: 200px;
+        }
+
+        .k {
+            margin-left: 53px;
+        }
+
+        #about {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div>
+        <div id="f">
+            <div id="g">
+                <div id="x">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" placeholder="your name"><br>
+
+                    <label for="Email">Email:</label>
+                    <input id="Email" type="email" placeholder="your email"><br>
+
+                    <label for="pass">Password:</label>
+                    <input id="pass" type="password"><br>
+
+                    <label for="phn">Phone Number:</label>
+                    <input id="phn" type="number">
+                    <br>
+
+                    <label name="gen">Gender: </label>
+                    <label class="k" for="Male">Male:</label>
+                    <input type="radio" id="Male" name="gen" value="Male">
+
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gen" value="female">
+
+                    <label for="other">Other:</label>
+                    <input type="radio" id="other" name="gen" value="other">
+
+                    <br>
+                    <label for="lang">language: </label>
+                    <select id="lang" name="lang">
+                        <option value="select">Select language</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="hindi">English</option>
+                    </select>
+
+                    <br>
+                    <label for="zip">Zip Code:</label>
+                    <input id="zip" type="number">
+                    <table>
+                        <tr>
+                            <th>About:</th>
+                            <td><textarea rows="2" id="about" placeholder="Write about yourself..."></textarea></td><br>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Register"><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
